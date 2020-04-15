@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="195dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="76dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:text="Name:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="137dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:text="  Date:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameView" />
+
+    <EditText
+        android:id="@+id/resultBox"
+        android:layout_width="206dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateBox" />
+
+    <Button
+        android:id="@+id/personButton"
+        android:layout_width="152dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:onClick="addPressed"
+        android:text="ADD PATIENT"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultBox" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="145dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="30dp"
+        android:text="Result:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateView" />
+
+    <EditText
+        android:id="@+id/dateBox"
+        android:layout_width="208dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameBox" />
+</androidx.constraintlayout.widget.ConstraintLayout>

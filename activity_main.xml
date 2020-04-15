@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/personButton"
+        android:layout_width="152dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:onClick="addPressed"
+        android:text="Add Person"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covidView" />
+
+    <Button
+        android:id="@+id/patientButton"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:onClick="viewPressed"
+        android:text="VIEW PATIENTS"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personButton" />
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_width="158dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:onClick="resultPressed"
+        android:text="RESULTS"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="149dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginRight="137dp"
+        android:onClick="deletePressed"
+        android:text="DELETE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultButton" />
+
+    <TextView
+        android:id="@+id/covidView"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:paddingLeft="35dp"
+        android:text="COVID-19 TESTING"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
